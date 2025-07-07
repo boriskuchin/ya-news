@@ -73,3 +73,9 @@ def comment_list(news, author):
         comment.save()
         comments.append(comment)
     return comments
+
+@pytest.fixture
+def form_data():
+    return {
+        'text': 'Updated comment text',
+    }
